@@ -12,7 +12,7 @@ export default class DopplerShiftSimulator extends React.Component {
             parameters: {
                 animationRate: 1,
                 isAnimationEnabled: false,
-                isEmissionEnabled: false
+                isEmissionEnabled: true
             }
             // might need to initialize some more variables
         };

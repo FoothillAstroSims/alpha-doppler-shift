@@ -71,8 +71,8 @@ export default class MainView extends React.Component {
         this.container = select(this.ref.current)
             .append('g');
 
-        this.source = this.createAgents(this.positions.source.x, this.positions.source.y, 'source', 'green');
         this.observer = this.createAgents(this.positions.observer.x, this.positions.observer.y, 'observer', 'darkred');
+        this.source = this.createAgents(this.positions.source.x, this.positions.source.y, 'source', 'green');
 
         requestAnimationFrame(this.animate.bind(this));
     }
@@ -91,7 +91,7 @@ export default class MainView extends React.Component {
 
         this.updatePosition(this.focus, xPos, yPos);
         select(`#${this.focus}`)
-            .attr('transform', `translate(${xPos}, ${yPos})`);
+            .attr('transform', `translate(${xPos}, ${yPos})`)
     }
 
     updateCircleStatus(d) {
@@ -140,7 +140,7 @@ export default class MainView extends React.Component {
             }
 
             this.setState({
-                time: this.state.time + 1, //* this.props.params.animationRate,
+                time: this.state.time + 1, // * this.props.params.animationRate,
                 circles: circles
             });
         
