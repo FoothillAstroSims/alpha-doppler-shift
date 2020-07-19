@@ -122,8 +122,8 @@ export default class MainView extends React.Component {
 
     animate() {
         if (this.props.params.isAnimationEnabled) {
-
             let circles = this.state.circles;
+
             circles.forEach(this.updateCircleStatus.bind(this));
 
             if (this.props.params.isEmissionEnabled) {

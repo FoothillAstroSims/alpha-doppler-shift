@@ -90,6 +90,8 @@ export default class Timeline extends React.Component {
                                 HEIGHT={HEIGHT}
                                 spikeArray={this.sourceSpikes}
                                 time={this.time}
+                                id={'first'}
+                                color={'green'}
                             />
 
                             <SpikeRecord
@@ -98,6 +100,8 @@ export default class Timeline extends React.Component {
                                 HEIGHT={HEIGHT}
                                 spikeArray={this.collisionSpikes}
                                 time={this.time}
+                                id={'second'}
+                                color={'darkred'}
                             />
                         </div>
                         <div className="box">
